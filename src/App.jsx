@@ -100,7 +100,7 @@ export default function App() {
     const cleanEmail = email.toLowerCase().trim();
     
     // רשימת המיילים המורשים - כולל המייל שלך מהתמונות
-    const allowedEmails = ['fried@gmail.com', 'python.nf.sy@gmail.com', 'your-email@gmail.com']; 
+    const allowedEmails = ['fried@gmail.com', 'python.nf.sy@gmail.com', 'm0504118778@gmail.com']; 
     if (!allowedEmails.includes(cleanEmail)) {
       setAuthError('אימייל זה אינו מורשה גישה למערכת פריד משכנתאות');
       return;

@@ -144,7 +144,7 @@ export default function App() {
     setIsAuthLoading(true);
 
     setTimeout(() => {
-      if (otpCode === generatedOtp || otpCode === '1234') {
+      if (otpCode === generatedOtp ) {
         // 🔐 אבטחה רשמית מול שרתי Firebase שפותחת את חסימת ה-Rules
         signInAnonymously(auth)
           .then(() => {
@@ -413,7 +413,7 @@ export default function App() {
               <form onSubmit={handleVerifyOtp} className="space-y-3">
                 <div>
                   <div className="flex justify-between items-center mb-1 mr-1">
-                    <label className="text-[11px] font-bold text-slate-400">קוד אימות (הזן 1234 לגיבוי)</label>
+                    <label className="text-[11px] font-bold text-slate-400"></label>
                     <button type="button" onClick={() => setIsOtpSent(false)} className="text-[11px] text-amber-500">החלף אימייל</button>
                   </div>
                   <div className="relative">

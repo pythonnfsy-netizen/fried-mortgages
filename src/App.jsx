@@ -124,7 +124,7 @@ export default function App() {
         body: JSON.stringify({ email: cleanEmail, otpCode: randomOtp }),
       });
 
-      console.log(`[DEVELOPER INFO] Secure OTP Sent to ${cleanEmail}: ${randomOtp}`);
+      //console.log(`[DEVELOPER INFO] Secure OTP Sent to ${cleanEmail}: ${randomOtp}`);
       
       setIsAuthLoading(false);
       setIsOtpSent(true);
